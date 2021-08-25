@@ -1,0 +1,79 @@
+@media only screen and (min-width: 576px) {
+  .container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 44%;
+            flex: 0 1 44%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: gray;
+}
+
+.wrapper-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.container {
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 8px 0px lightgray;
+          box-shadow: 0px 2px 8px 0px lightgray;
+  background-color: white;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.banner-img {
+  position: absolute;
+  background-image: url("https://images.unsplash.com/photo-1591154669695-5f2a8d20c089?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+  height: 10rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.child-image {
+  width: 8rem;
+  -webkit-clip-path: circle(60px at center);
+          clip-path: circle(60px at center);
+  margin-top: 4.5rem;
+}
+
+.child_name {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.child_information {
+  margin: 1rem 2rem;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=ChildPage.css.map */

@@ -1,0 +1,17 @@
+@import "../Scss/mixins";
+@import "../Scss/variables.css";
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: darkgreen;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    line-height: 100px;
+    text-align: center;
+    font-family:$titleFont;
+}
