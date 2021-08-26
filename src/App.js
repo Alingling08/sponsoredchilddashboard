@@ -23,11 +23,9 @@ const App = () => {
   const fetchChildInfo = async () => {
     const res = await fetch('https://stg-svc.worldvision.ca/donorservice/api/profile/7ef79d2ac8c64a239f92527261ab333b/donor/children/en/NamedPrivate?svc=464424')
     const data = await res.json()
-    console.log(data);
     return data.sponsoredChildrenDisplay
   }
 
-  console.log(childinfo);
   return (
     <div>
       <Header title="Sponsored Child Dashboard" />

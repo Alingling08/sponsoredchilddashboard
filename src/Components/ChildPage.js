@@ -1,6 +1,5 @@
 import React from 'react'
-import Axios from 'axios'
-import '../Styles/ChildPage.css';
+import '../Styles/ChildPage.scss';
 
 const ChildPage = ({ child }) => {
     return (
