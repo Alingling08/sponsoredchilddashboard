@@ -1,3 +1,11 @@
+## Overview
+
+![screenshot](https://github.com/Alingling08/sponsoredchilddashboard/blob/main/image/Desktop%20Screenshot.PNG)
+<br/>
+Screenshot (desktop view)
+<br/>
+<br/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
