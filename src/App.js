@@ -2,17 +2,22 @@ import logo from './logo.svg';
 import { useState, useEffect } from 'react'
 import Header from './Components/Header';
 import ChildInfo from './Components/ChildInfo';
+import LoadingPage from './Components/LoadingPage';
+
 
 
 const App = () => {
-  const [childinfo, setChildInfo] = useState([])
+  const [childinfo, setChildInfo] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const getChildInfo = async () => {
       const childInfoFromServer = await fetchChildInfo()
       setChildInfo(childInfoFromServer)
+      setLoading(true);
     }
     getChildInfo()
+
   }, [])
 
   const fetchChildInfo = async () => {
@@ -25,7 +30,9 @@ const App = () => {
   return (
     <div>
       <Header title="Sponsored Child Dashboard" />
-      <ChildInfo children={childinfo} />
+      <div className="wrapper-flex">
+        {loading ? <ChildInfo children={childinfo} /> : <LoadingPage />}
+      </div>
     </div>
   );
 }
